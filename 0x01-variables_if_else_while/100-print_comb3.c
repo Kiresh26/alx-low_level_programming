@@ -8,14 +8,15 @@
 int main(void)
 {
 	int p;
+	p = 0;
 
-	while(p < 99)
+	while (p < 99)
 	{
 		int f;
 		int l;
 
 		f = p;
-		while (f >=10)
+		while (f >= 10)
 			f /= 10;
 
 		l = p % 10;
