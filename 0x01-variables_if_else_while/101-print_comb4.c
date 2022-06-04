@@ -9,11 +9,9 @@ int main(void)
 {
 		int i, j, k, l;
 
-		i = 0;
-
-		while (i < 1000)
+		for (i = 0; i < 1000; i++)
 		{
-			j = i % 100;
+			j = i / 100;
 			k = (i / 10) % 10;
 			l = i % 10;
 
@@ -29,7 +27,6 @@ int main(void)
 					putchar(32);
 				}
 			}
-			i++;
 		}
 		putchar('\n');
 
