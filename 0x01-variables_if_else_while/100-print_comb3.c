@@ -14,7 +14,7 @@ int main(void)
 		int f;
 		int l;
 
-		f = p
+		f = p;
 		while (f >=10)
 			f /= 10;
 
