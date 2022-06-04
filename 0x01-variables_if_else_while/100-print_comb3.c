@@ -9,13 +9,16 @@ int main(void)
 {
 	int p;
 
-	for (p = '1'; p <= '99'; p++)
+	while(p < 99)
 	{
 		int f;
 		int l;
 
-		f = p[0];
-		l = p[1];
+		f = p
+		while (f >=10)
+			f /= 10;
+
+		l = p % 10;
 		if (f != l)
 		{
 			int inv;
@@ -24,13 +27,14 @@ int main(void)
 			if (p < inv)
 			{
 				putchar(p);
-				if (p < '99')
+				if (p < 99)
 				{
 					putchar(44);
 					putchar(32);
 				}
 			}
 		}
+		p++;
 	}
 	putchar('\n');
 	return (0);
