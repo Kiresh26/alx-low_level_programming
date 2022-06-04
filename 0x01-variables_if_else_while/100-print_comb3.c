@@ -7,36 +7,30 @@
  */
 int main(void)
 {
-	int p;
-	p = 0;
+		int i, j, k;
 
-	while (p < 99)
-	{
-		int f;
-		int l;
+		i = 0;
 
-		f = p;
-		while (f >= 10)
-			f /= 10;
-
-		l = p % 10;
-		if (f != l)
+		while (i < 100)
 		{
-			int inv;
+			j = i % 10;
+			k = i / 10;
 
-			inv = l + f;
-			if (p < inv)
+			if (k < j)
 			{
-				putchar(p);
-				if (p < 99)
+				putchar(k + '0');
+				putchar(j + '0');
+
+				if  (i < 89)
 				{
 					putchar(44);
 					putchar(32);
 				}
+			
 			}
+			i++;
 		}
-		p++;
-	}
-	putchar('\n');
-	return (0);
+		putchar('\n');
+
+		return (0);
 }
