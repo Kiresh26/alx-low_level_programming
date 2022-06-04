@@ -9,7 +9,7 @@ int main(void)
 {
 	int p;
 
-	for (p = '01'; p <= '99'; p++)
+	for (p = '1'; p <= '99'; p++)
 	{
 		int f;
 		int l;
