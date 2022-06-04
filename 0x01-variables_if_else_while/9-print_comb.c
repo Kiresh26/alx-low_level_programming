@@ -11,7 +11,7 @@ int main(void)
 
 	for (p = '0'; p <= '9'; p++)
 	{
-		putchar("%d, ", p);
+		putchar('%d' , p);
 	}
 	putchar('\n');
 	return (0);
