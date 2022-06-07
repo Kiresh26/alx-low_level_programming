@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - entry point
@@ -15,4 +15,6 @@ int main(void)
 			letters++;
 	}
 	_putchar('\n');
+
+	return (0);
 }
