@@ -1,19 +1,21 @@
 #include "main.h"
 
 /**
- * main - entry point
+ * main - Program entry point
  *
  * Return: 0
  */
 int main(void)
 {
-	char letters = 'a';
+	char x[9] = "_putchar";
+	int i;
 
-	while (c <= 'z')
+	for (i = 0; i < 8; i++)
 	{
-		_putchar(letters)
-			letters++;
+
+		_putchar(x[i]);
 	}
+
 	_putchar('\n');
 
 	return (0);
