@@ -2,7 +2,7 @@
 
 /**
  * _islower- Prototype, Return 1 is c is lower case, if not return 0
- *@c: ASCII to be checked
+ *@c: char type letter
  * Return : 1 if lowercase, 0 if uppercase
  */
 int _islower(int c)
