@@ -28,7 +28,7 @@ int main(void)
 	c = (a / m);
 	d = (a % m);
 	c = (b / m);
-	aft2 = (b % m);
+	f = (b % m);
 
 	for (i = 92; i < 99; ++i)
 	{
