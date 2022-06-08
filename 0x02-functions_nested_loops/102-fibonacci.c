@@ -2,7 +2,7 @@
 
 /**
  * main - Entry point
- * Desccription: print the first 50 numbers in the fibonacci sequence starting with 1 and 2
+ * Desccription: print the first 50 numbers in fibonacci starting with 1 and 2
  * Must be separated but a comma and space
  * Return: 0
  */
