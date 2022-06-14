@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * puts2 - Prints every 2nd sting char
  * @str: the string
