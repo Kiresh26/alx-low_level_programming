@@ -1,7 +1,8 @@
 #include "main.h"
 #include <string.h>
-/*
- * _strncpy - copy a string
+
+/**
+ * _strncpy - copy a string from src to dest
  * @dest: destination
  * @src: source
  * @n: number of elements
@@ -9,15 +10,14 @@
  * Return: copied string dest
  */
 
-char *
-strncpy(char *dest, const char *src, size_t n)
+char *_strncpy(char *dest, const char *src, size_t n)
 {
-	size_t i;
+	int i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
 		dest[i] = src[i];
-	for ( ; i < n; i++)
-		dest[i] = '\0';
 
+	for (; n > i; i++)
+		dest[i] = '\0';
 	return (dest);
 }
