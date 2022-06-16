@@ -23,7 +23,7 @@ char *cap_string(char *str)
 			if (sep[c] == str[i])
 				trigger = 1;
 		}
-	
+
 		if (trigger)
 		{
 			if (str[i] > 96 && str[i] < 123)
