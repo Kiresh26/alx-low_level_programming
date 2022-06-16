@@ -12,7 +12,7 @@ char *cap_string(cap *str)
 {
 	int i, c;
 	int trigger;
-	char sep[] = ",;.!?(){}\n\t\" ";
+	char sep[] = ",\t;\n; .!?\"(){}";
 
 	for (i = 0, trigger = 0; str[i] != '\0'; i++)
 	{
@@ -23,6 +23,7 @@ char *cap_string(cap *str)
 			if (sep[c] == str[i])
 				trigger = 1;
 		}
+	
 		if (trigger)
 		{
 			if (str[i] > 96 && str[i] < 123)
