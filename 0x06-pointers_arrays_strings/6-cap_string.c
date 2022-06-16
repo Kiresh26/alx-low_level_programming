@@ -8,7 +8,7 @@
  * Return: str
  */
 
-char *cap_string(cap *str)
+char *cap_string(char *str)
 {
 	int i, c;
 	int trigger;
