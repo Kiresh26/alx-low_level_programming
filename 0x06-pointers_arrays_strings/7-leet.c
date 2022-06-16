@@ -10,20 +10,23 @@
 char *leet(char *s)
 {
 	int i;
+	char lower[] = "aeotl";
+	char upper[] = "AEOTL";
+	char num[] = "43071";
 
-	for (i = 0; s[i] != '\0'; i++)
+	for (i = 0; s[i]; i++)
 	{
-		while (s[i] == 'a' || s[i] == 'A')
-			s[i] = '4';
-		while (s[i] == 'e' || s[i] == 'E')
-			s[i] = '3';
-		while (s[i] == 'o' || s[i] == 'O')
-			s[i] = '0';
-		while (s[i] == 't' || s[i] == 'T')
-			s[i] = '7';
-		while (s[i] == 'l' || s[i] == 'L')
-			s[i] = '1';
+		int h;
 
+		for (h = 0; h < 5; h++)
+		{
+			if (s[i] != lower[h] && s[i] != upper[h])
+				continue;
+
+			s[i] = num[h];
+			break;
+		}
 	}
+
 	return (s);
 }
