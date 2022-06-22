@@ -5,7 +5,7 @@
  * _strlen_recursion- find the lenght of a string
  * @s: string
  *
- * return: sting length
+ * Return: sting length
  *
  */
 
