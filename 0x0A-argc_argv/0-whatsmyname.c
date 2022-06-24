@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - program entry point
@@ -8,10 +9,9 @@
  * Return: 0 (success)
  */
 
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	if (argc > 0)
-		printf("%s\n", argv[1]);
+	printf("%s\n", *argv);
 
 	return (0);
 }
