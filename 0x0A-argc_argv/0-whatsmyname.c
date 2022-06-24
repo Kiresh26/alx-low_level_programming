@@ -1,16 +1,19 @@
-#include "main.h"
 #include <stdio.h>
-/*
- * main - print the name of the file \n
- * @argc: argument count
- * @argv: argument passed to main []
- * Return: 0
+#include <stdlib.h>
+#include "main.h"
+
+/**
+ * main - Entry point
+ *
+ * @argc: counts the number of char going into main
+ * @argv: point of array
+ *
+ * Return: 0 (success)
  */
 
-int main(int argc __attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s\n", *argv);
-
+	if (argc > 0)
+		printf("%s\n", argv[0]);
 	return (0);
 }
-
