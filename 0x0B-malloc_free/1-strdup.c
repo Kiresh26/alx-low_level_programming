@@ -1,24 +1,19 @@
 #include "main.h"
 #include <stdlib.h>
 
-
 /**
-  *_strdup - returns a pointer to a newly alloctaed
-  *space in memory which contains a copy of the string
-  *passed.
-  *@str: pointer to string being duplicated.
-  *
-  *Return: NULL if str is NULL.
-  *pointer to duplicated string on success.
-  *NULL if memory was insufficient.
-  */
-  
+ * _strdup - return pointer
+ * @str: pointer to string copied
+ *
+ * Return: Null if str is null
+ *
+ */
+
 char *_strdup(char *str)
 {
 	char *nstr;
 	unsigned int len, i;
 
-	/* check is str is null */
 	if (str == NULL)
 	{
 		return (NULL);
@@ -32,7 +27,6 @@ char *_strdup(char *str)
 
 	nstr = malloc(sizeof(char) * (len + 1));
 
-	/*check if malloc was successful*/
 	if (nstr == NULL)
 	{
 		return (NULL);
