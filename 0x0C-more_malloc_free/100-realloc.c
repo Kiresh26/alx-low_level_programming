@@ -5,7 +5,7 @@
  * @ptr: pointer to previous memory block
  * @old_size: size in bytes of allocated space for `ptr`
  * @new_size: size in bytes for new allocated space
- * 
+ *
  * Return: Pointer to new memory block, or NULL if error
  */
 
