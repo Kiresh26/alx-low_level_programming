@@ -20,4 +20,4 @@ void print_dog(struct dog)
         printf("Owner: ");
         d->owner == NULL ? printf("(nil)\n") : printf("%s\n", d->owner);
     }
-};
+}
