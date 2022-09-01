@@ -5,6 +5,7 @@
  * @head: head of doubly LL
  * Return: sum of all `n` or 0 if LL is empty
  */
+
 int sum_dlistint(dlistint_t *head)
 {
 	int sum;
